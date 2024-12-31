@@ -1,0 +1,47 @@
+.counter-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30vh;
+  width: 30vh;
+  text-align: center;
+  border: 2px solid #d5f2ff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: #b6e8ff;
+}
+
+.counter-container::before {
+  content: "";
+  position: absolute;
+  background: no-repeat
+    url(https://static.pw.live/5b09189f7285894d9130ccd0/fa94a64a-7f6c-49c7-99be-dbf5b4cf440f.webp);
+  background-position: center;
+  background-size: 50%;
+  bottom: 0;
+  height: 0%;
+  width: 0%;
+  transition: all 0.3s ease-in-out;
+}
+
+.counter-container:hover::before {
+  height: 50%;
+  width: 100%;
+}
+
+.counter-container:hover {
+  padding-bottom: 7rem;
+}
+
+.counter {
+  font-size: 40px;
+  position: relative;
+}
+
+.counterText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+}

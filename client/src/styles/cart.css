@@ -1,0 +1,116 @@
+.cartCardBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cartButtonBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.paymentButton {
+  width: 40%;
+  border: 2px solid rgba(88, 197, 255, 0.75);
+  color: rgba(88, 197, 255, 0.75);
+  background-color: transparent;
+  height: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.paymentButton:hover {
+  background-color: #b4eeff;
+}
+
+.paymentHeader {
+  color: rgba(88, 197, 255, 0.75);
+}
+
+.cartCard {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.cartCardUpperBox,
+.cartCardLowerBox {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.cartCardButtonBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cartCardNegButton,
+.cartCardCntButton,
+.cartCardPosButton {
+  width: 30%;
+  height: 2rem;
+  font-size: 100%;
+  border: 2px solid rgba(88, 197, 255, 0.75);
+  border-radius: 5px;
+  color: rgba(88, 197, 255, 0.75);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.cartCardNegButton:hover,
+.cartCardCntButton:hover,
+.cartCardPosButton:hover {
+  background-color: #b4eeff;
+}
+
+.cartCardRemoveButton {
+  height: 2rem;
+  font-size: 100%;
+  width: 80%;
+  border: 2px solid rgba(88, 197, 255, 0.75);
+  border-radius: 5px;
+  color: rgba(88, 197, 255, 0.75);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.cartCardRemoveButton:hover {
+  background-color: #b4eeff;
+}
+
+.cartCardName,
+.cartCardPrice {
+  color: rgba(88, 197, 255, 0.75);
+}
+
+@media screen and (max-width: 790px) {
+  .cartCard {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .paymentButton {
+    width: 90%;
+  }
+}

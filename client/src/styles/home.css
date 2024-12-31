@@ -1,0 +1,74 @@
+.cards {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-gap: 40px;
+}
+
+.courceCards {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: 40px;
+  padding: 30px 0;
+}
+
+.cardPart {
+  padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.courceHeader {
+  font-size: 3rem;
+  color: #03a9f4;
+}
+
+.counterSection {
+  align-items: center;
+  color: #03a9f4;
+  display: flex;
+  font-family: "Roboto Mono", sans-serif;
+  height: 30vh;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .courceCards {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
+
+  .cards{
+    grid-column: 2 / span 6;
+    grid-gap: 20px;
+  }
+
+  .CCcard__content{
+    padding: 0;
+  }
+  .CCcard__title{
+    height: 100%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .counterSection {
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .courceCards {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
+  .cards {
+    grid-column: 2 / span 6;
+    grid-gap: 20px;
+  }
+}

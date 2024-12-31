@@ -1,0 +1,53 @@
+.imagesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem;
+  z-index: 9;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.back {
+  position: absolute;
+  height: 2rem;
+  width: 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #03a9f4;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+
+.imageContainer {
+  height: 200vh;
+  width: 80vw;
+  margin: 1rem;
+}
+
+.noteImage {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .imageContainer {
+    height: 150vh;
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .imageContainer {
+    height: 100vh;
+  }
+}

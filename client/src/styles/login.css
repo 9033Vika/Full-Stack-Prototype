@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ring {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login h2 {
+  font-size: 2em;
+  color: rgba(88, 197, 255, 0.75);
+}
+
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+
+.login .inputBx input,
+button {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid rgba(88, 197, 255, 0.75);
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: rgba(88, 197, 255, 0.75);
+  box-shadow: none;
+  outline: none;
+}
+
+.login .inputBx button {
+  width: 100%;
+  color: #0078ff;
+  background: linear-gradient(to right, #ade5ff 0%, #0697ff 100%);
+  border: none;
+  cursor: pointer;
+}
+
+.login .inputBx input::placeholder {
+  color: rgba(88, 169, 255, 0.75);
+}
+
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.login .links a {
+  color: rgba(88, 197, 255, 0.75);
+  text-decoration: none;
+}

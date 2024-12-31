@@ -1,0 +1,64 @@
+.text--medium {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.CCcard {
+  grid-column-end: span 4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #c2eaff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.CCcard:hover {
+  transform: translateY(-7px);
+}
+
+.CCcard__image-container {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.CCimage {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CCcard__content {
+  padding: 20px;
+}
+
+.CCcard__title {
+  color: black;
+}
+
+.CCcard__info {
+  display: flex;
+  align-self: end;
+  align-items: center;
+}
+
+.CCcard__price {
+  margin-left: auto;
+  padding: 5px 20px;
+  background-color: #03a9f4;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .CCcard {
+    grid-column-end: span 6;
+  }
+}

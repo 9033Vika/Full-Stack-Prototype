@@ -1,0 +1,85 @@
+.coursesCard-text--medium {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.coursesCard-card {
+  grid-column-end: span 4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #c2eaff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.coursesCard-card:hover {
+  transform: translateY(-7px);
+}
+
+.CoursesButton {
+  width: 30%;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: medium;
+  background-color: rgb(255, 183, 183);
+  cursor: pointer;
+}
+
+.coursesCard-card__image-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.coursesCard-image {
+  width: 100%;
+}
+
+.coursesCard-card__content {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coursesCard-card__title {
+  color: black;
+}
+
+.coursesCard-card__info {
+  display: flex;
+  align-self: end;
+  align-items: center;
+}
+
+.coursesCard-card__price {
+  margin-left: auto;
+  padding: 5px 20px;
+  background-color: #03a9f4;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .coursesCard-card {
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .coursesCard-card {
+    grid-column-end: span 12;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coursesCard-card {
+    grid-column-end: span 6;
+  }
+}
