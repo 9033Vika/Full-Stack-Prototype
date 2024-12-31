@@ -33,7 +33,7 @@ app.use(urlencoded({ extended: false }));
 app.use(
   cors({
     credentials: true,
-    origin: true,
+    origin: "https://course-selling-full-stack-prototype-frontend.vercel.app/",
     methods: ["GET", "PUT", "POST", "DELETE"],
   })
 );
