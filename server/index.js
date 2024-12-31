@@ -29,10 +29,10 @@ export const instance = new Razorpay({
 
 connection(process.env.MONGO_URI);
 
-app.use(urlencoded({ extended: false }));
+app.use(urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "[https://coursesellingfullstackprototypefrontend.onrender.com]",
+    origin: ["https://coursesellingfullstackprototypefrontend.onrender.com"],
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true,
   })
