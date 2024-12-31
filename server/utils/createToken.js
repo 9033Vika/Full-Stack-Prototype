@@ -7,8 +7,8 @@ export const sendToken = async (res, user, code, msg) => {
     .status(code)
     .cookie("token", token, {
       expires: new Date((new Date()).getTime() + (10 * 86400000)),
-      httpOnly: true,
-      sameSite: "none",
+      httpOnly: false,
+      sameSite: "None",
       secure: true,
     })
     .json({
