@@ -14,7 +14,7 @@ import Razorpay from "razorpay";
 
 const app = express();
 
-dotenv.config({ path: "./." });
+dotenv.config({ path: "./.env" });
 
 cloudinary.config({
   cloud_name: process.env.NAME,
