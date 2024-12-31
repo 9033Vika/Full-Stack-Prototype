@@ -1,9 +1,7 @@
 import { connect } from "mongoose";
 
 const connection = (uri) => {
-  connect(uri, {
-      dbName: "onlineCource",
-    })
+  connect(uri)
     .then((data) => {
       console.log("database connected");
     })
