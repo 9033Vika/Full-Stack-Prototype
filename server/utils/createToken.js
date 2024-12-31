@@ -8,7 +8,8 @@ export const sendToken = async (res, user, code, msg) => {
     .cookie("token", token, {
       maxAge: new Date(Date.now() + 1000 * 60 * 60 * 60 * 24),
       httpOnly: true,
-      same_site: "none",
+      sameSite: "none",
+      secure: true,
     })
     .json({
       success: true,
