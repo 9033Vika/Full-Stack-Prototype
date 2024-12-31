@@ -32,7 +32,7 @@ connection(process.env.MONGO_URI);
 app.use(urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "https://course-selling-full-stack-prototype-frontend.vercel.app/",
+    origin: true,
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true,
   })
