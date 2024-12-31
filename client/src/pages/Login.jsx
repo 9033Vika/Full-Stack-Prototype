@@ -28,12 +28,12 @@ const Login = () => {
       password
     );
 
-    if (data.success) {
-      toast.success(data.message, {
+    if (data?.success) {
+      toast.success(data?.message, {
         id: toastId,
       });
     } else {
-      toast.error(data.response.data.message, {
+      toast.error(data?.response?.data?.message, {
         id: toastId,
       });
     }
@@ -51,12 +51,12 @@ const Login = () => {
       password
     );
 
-    if (data.success) {
-      toast.success(data.message, {
+    if (data?.success) {
+      toast.success(data?.message, {
         id: toastId,
       });
     } else {
-      toast.error(data.response.data.message, {
+      toast.error(data?.response?.data?.message, {
         id: toastId,
       });
     }
