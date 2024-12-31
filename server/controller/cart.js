@@ -351,7 +351,7 @@ export const verify = async (req, res) => {
 
     await user.save();
 
-    res.redirect(`http://localhost:5173/paymentSuccess/${razorpay_payment_id}`);
+    res.redirect(`http://course-selling-full-stack-prototype-frontend.vercel.app/paymentSuccess/${razorpay_payment_id}`);
   } catch (error) {
     return res.status(500).json({
       success: false,
