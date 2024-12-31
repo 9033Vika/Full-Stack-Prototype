@@ -32,7 +32,7 @@ connection(process.env.MONGO_URI);
 app.use(urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "https://coursesellingfullstackprototypefrontend.onrender.com",
+    origin: "[https://coursesellingfullstackprototypefrontend.onrender.com]",
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true,
   })
