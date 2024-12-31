@@ -1,1 +1,1 @@
-export const server = "https://course-selling-full-stack-prototype.vercel.app/api/";
+export const server = "http://localhost:4000/api/";
