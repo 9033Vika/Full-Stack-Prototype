@@ -6,7 +6,7 @@ export const sendToken = async (res, user, code, msg) => {
   return res
     .status(code)
     .cookie("token", token, {
-      maxAge: new Date(Date.now() + 1000 * 60 * 60 * 60 * 24),
+      expires: new Date(Date.now() + 1000 * 60 * 60 * 60 * 24),
       httpOnly: false,
       sameSite: "None",
       secure: true,
