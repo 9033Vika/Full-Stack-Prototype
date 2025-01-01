@@ -100,7 +100,8 @@ export const getMyProfile = async (req, res) => {
 
 export const logout = async (req, res) => {
   try {
-    return res.status(200).cookie("token", "", { expires: 0 }).json({
+    res.clearCookie("token");
+    return res.status(200).json({
       success: true,
       message: "Logged out",
     });
