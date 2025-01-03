@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../axios/user";
 import { server } from "../constants/MISC";
+import { userDoesNotExist } from "../redux/reducers/auth";
 
 const Logout = () => {
   const dispatch = useDispatch();
@@ -15,6 +16,7 @@ const Logout = () => {
     const data = await logout(dispatch, `${server}user/logout`);
 
     if (data.success) {
+      dispatch(userDoesNotExist());
       toast.success(data.message, {
         id: toastId,
       });
