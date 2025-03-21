@@ -2,9 +2,9 @@ import img from "./woman.webp";
 
 export const akaDetail = {
   image: img,
-  name: "Akanksha",
-  qualification: "BA",
-  experience: "2 years",
-  subject: "Sales",
-  tag: "mujhse na hogai",
+  name: "ABC",
+  qualification: "M.Sc",
+  experience: "10 years",
+  subject: "Chemistry",
+  tag: "",
 };

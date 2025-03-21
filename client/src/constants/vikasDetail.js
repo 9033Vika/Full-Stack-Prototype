@@ -6,5 +6,5 @@ export const vikasDetail = {
   qualification: "BCA",
   experience: "1 years",
   subject: "Computer Science",
-  tag: "papa hu mai",
+  tag: " ",
 };
